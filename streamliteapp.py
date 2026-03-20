@@ -1,12 +1,11 @@
-import streamlit as st
+import streamlit as st ##good for UI
 import requests
 
 st.title("🔗 URL Shortener")
 
-# input
+
 url = st.text_input("Enter your URL")
 
-# optional expiration
 expires_at = st.text_input("Expiration (optional) e.g. 2026-04-01 12:00:00")
 
 if st.button("Shorten"):
